@@ -1,5 +1,10 @@
 {
   "name": "@config/taiwind",
   "version": "1.0.0",
-  "scripts": {}
+  "type": "module",
+  "scripts": {},
+  "exports": {
+    ".": "./tailwind.config.js",
+    "./global.css": "./global.css"
+  }
 }

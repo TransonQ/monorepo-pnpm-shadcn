@@ -6,6 +6,9 @@
   "scripts": {
     "ui-add": "pnpx shadcn@latest add"
   },
+  "exports": {
+    "./*": "./src/components/ui/*.tsx"
+  },
   "devDependencies": {
     "@config/taiwind": "workspace:*",
     "@config/ts": "workspace:*",

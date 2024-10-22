@@ -1,7 +1,10 @@
+import { Button } from "@ui/shadcn/button"
+
 function App() {
   return (
     <>
-      <div>Hello World</div>
+      <Button>Button</Button>
+      <div className="text-red-500">Hello World</div>
       <div>Tailwind css</div>
     </>
   )

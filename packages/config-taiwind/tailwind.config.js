@@ -1,7 +1,13 @@
+import TailwindAnimatePlugin from "tailwindcss-animate"
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{ts,tsx}",
+    "../../packages/ui-shadcn/src/**/*.{js,ts,jsx,tsx}",
+    "../../templates/vite-app/src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       borderRadius: {
@@ -53,5 +59,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [TailwindAnimatePlugin],
 }
