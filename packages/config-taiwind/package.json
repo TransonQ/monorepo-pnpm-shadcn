@@ -4,7 +4,6 @@
   "type": "module",
   "scripts": {},
   "exports": {
-    ".": "./tailwind.config.js",
-    "./global.css": "./global.css"
+    ".": "./tailwind.config.js"
   }
 }
