@@ -23,6 +23,18 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
+      "no-empty": ["warn", { allowEmptyCatch: true }],
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-empty-object-type": "off",
+      "@typescript-eslint/consistent-type-imports": "warn",
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          args: "none",
+          varsIgnorePattern: "^(_|TData)",
+          caughtErrors: "none",
+        },
+      ],
     },
   }
 )
