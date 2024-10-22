@@ -1,0 +1,17 @@
+{
+  "name": "@ui/shadcn",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "ui-add": "pnpx shadcn@latest add"
+  },
+  "devDependencies": {
+    "@config/taiwind": "workspace:*",
+    "@config/ts": "workspace:*",
+    "@mono/libs": "workspace:*"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0"
+  }
+}

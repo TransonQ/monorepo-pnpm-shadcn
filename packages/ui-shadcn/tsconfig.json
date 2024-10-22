@@ -1,0 +1,17 @@
+{
+  "extends": "@config/ts",
+  "include": [
+    "src",
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ui/shadcn": [
+        "packages/ui-shadcn/src"
+      ],
+      "@mono/libs": [
+        "packages/libs"
+      ]
+    }
+  }
+}
