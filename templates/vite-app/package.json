@@ -16,5 +16,8 @@
   "devDependencies": {
     "@config/taiwind": "workspace:*",
     "@config/ts": "workspace:*"
+  },
+  "volta": {
+    "node": "18.20.4"
   }
 }
