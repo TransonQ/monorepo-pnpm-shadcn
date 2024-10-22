@@ -1,0 +1,7 @@
+{
+  "name": "monorepo-pnpm-shadcn",
+  "version": "0.0.1",
+  "scripts": {
+    "spaces": "pnpm list -r --depth=-1"
+  }
+}

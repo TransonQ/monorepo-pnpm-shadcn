@@ -1,0 +1,5 @@
+packages:
+  - config-taiwind
+  - config-ts
+  - packages/*
+  - templates/*
