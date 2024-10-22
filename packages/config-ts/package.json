@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "scripts": {},
   "exports": {
-    ".": "./tsconfig.json"
+    ".": "./tsconfig.json",
+    "./node": "./tsconfig.node.json"
   }
 }
