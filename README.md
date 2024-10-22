@@ -7,8 +7,7 @@
 pnpm run new-app
 ```
 
-- `TEMPLATE_NAME`: 位于 `templates/*` 工作区内部的模板文件夹名称
-- `PROJECT_NAME`: 新建的项目名称
+案例:
 
 ```bash
 pnpm run new-app
