@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // 引入必要的模块
 const fs = require("fs-extra")
 const path = require("path")
