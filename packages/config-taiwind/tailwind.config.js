@@ -6,7 +6,6 @@ export default {
   content: [
     "./src/**/*.{ts,tsx}",
     "../../packages/ui-shadcn/src/**/*.{js,ts,jsx,tsx}",
-    "../../templates/vite-app/src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
