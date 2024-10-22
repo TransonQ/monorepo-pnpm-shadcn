@@ -12,9 +12,6 @@
   },
   "aliases": {
     "components": "@ui/shadcn",
-    "utils": "@mono/libs",
-    "ui": "@/components/ui",
-    "lib": "@/lib",
-    "hooks": "@/hooks"
+    "utils": "@mono/libs"
   }
 }
