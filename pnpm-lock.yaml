@@ -122,7 +122,11 @@ importers:
 
   packages/config-ts: {}
 
-  packages/libs: {}
+  packages/libs:
+    dependencies:
+      '@config/ts':
+        specifier: workspace:*
+        version: link:../config-ts
 
   packages/ui-shadcn:
     dependencies:
@@ -217,12 +221,6 @@ importers:
       '@mono/libs':
         specifier: workspace:*
         version: link:../libs
-
-  templates/cli:
-    devDependencies:
-      '@config/ts':
-        specifier: workspace:*
-        version: link:../../packages/config-ts
 
   templates/vite-app:
     dependencies:
