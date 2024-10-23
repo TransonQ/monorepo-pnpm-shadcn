@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "spaces": "pnpm list -r --depth=-1",
-    "new-app": "node ./scripts/gen.cjs"
+    "new-app": "node ./scripts/gen.cjs",
+    "ui-add": "pnpm -F @ui/shadcn run ui-add"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
