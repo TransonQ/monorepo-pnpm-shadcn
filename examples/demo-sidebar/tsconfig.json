@@ -1,0 +1,15 @@
+{
+  "extends": "@config/ts",
+  "include": [
+    "src",
+    "types",
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    },
+  }
+}
