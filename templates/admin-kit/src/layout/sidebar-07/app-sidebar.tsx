@@ -12,12 +12,14 @@ import {
 } from "lucide-react"
 import * as React from "react"
 
+import { cn } from "@mono/libs"
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
+  useSidebar,
 } from "@ui/shadcn/sidebar"
 import { NavMain } from "./nav-main"
 import { NavProjects } from "./nav-projects"
@@ -33,7 +35,7 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Acme Tenant",
       logo: GalleryVerticalEnd,
       plan: "Enterprise",
     },
@@ -155,11 +157,18 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const { open } = useSidebar()
   return (
     <Sidebar collapsible="icon" {...props} x-chunk="SIDEBAR">
-      <div className="h-16 bg-orange-100"></div>
-
-      <SidebarHeader>
+      <div
+        className={cn(
+          "text-xl font-bold flex items-center justify-center border rounded-full",
+          open ? "mx-4 mt-4" : "m-2 mt-3"
+        )}
+      >
+        {open ? "ACME Logo" : "A"}
+      </div>
+      <SidebarHeader className="mt-2 pb-0">
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
