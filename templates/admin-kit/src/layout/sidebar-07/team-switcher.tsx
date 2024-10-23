@@ -1,6 +1,7 @@
 import { ChevronsUpDown, Plus } from "lucide-react"
 import * as React from "react"
 
+import { cn } from "@mono/libs"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -36,7 +37,9 @@ export function TeamSwitcher({
           <DropdownMenuTrigger asChild>
             <SidebarMenuButton
               size="lg"
-              className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+              className={cn(
+                "data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+              )}
             >
               <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
                 <activeTeam.logo className="size-4" />
