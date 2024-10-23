@@ -35,9 +35,15 @@ importers:
       next-themes:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
       react-day-picker:
         specifier: 8.10.1
         version: 8.10.1(date-fns@4.1.0)(react@18.3.1)
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
       react-hook-form:
         specifier: ^7.53.1
         version: 7.53.1(react@18.3.1)
@@ -222,17 +228,24 @@ importers:
         specifier: workspace:*
         version: link:../libs
 
+  templates/admin-starter:
+    dependencies:
+      '@ui/shadcn':
+        specifier: workspace:*
+        version: link:../../packages/ui-shadcn
+    devDependencies:
+      '@config/taiwind':
+        specifier: workspace:*
+        version: link:../../packages/config-taiwind
+      '@config/ts':
+        specifier: workspace:*
+        version: link:../../packages/config-ts
+
   templates/vite-app:
     dependencies:
       '@ui/shadcn':
         specifier: workspace:*
         version: link:../../packages/ui-shadcn
-      react:
-        specifier: ^18.3.1
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.3.1
-        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@config/taiwind':
         specifier: workspace:*
