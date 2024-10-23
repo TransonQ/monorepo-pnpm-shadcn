@@ -4,4 +4,12 @@
     "src",
     "types",
   ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    },
+  }
 }
