@@ -16,7 +16,7 @@ pnpm run new-app
 ```bash
 pnpm run new-app
 ---
-✔ 请选择模板: vite-app
-✔ 请输入项目名称: my-app
-✔ 请选择目标工作区: examples
+✔ Please select a template: vite-app
+✔ Please enter the project name: my-app
+✔ Please select the target workspace: examples
 ```

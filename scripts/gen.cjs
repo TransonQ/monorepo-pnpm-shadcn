@@ -26,7 +26,7 @@ const isProjectNameValid = (projectName, targetDir) => {
 
 // 主函数，使用 async/await 处理用户交互
 ;(async function () {
-  // Step 1: 选择模板
+  //~ Step 1: 选择模板
   const templates = getTemplates()
   if (templates.length === 0) {
     console.error("Error: No templates found in the templates directory.")
@@ -37,21 +37,21 @@ const isProjectNameValid = (projectName, targetDir) => {
     {
       type: "list",
       name: "templateName",
-      message: "请选择模板:",
+      message: "Please select a template:",
       choices: templates,
       default: templates[0],
     },
   ])
 
-  // Step 2: 输入项目名称，且不能与已有文件夹名称冲突
+  //~ Step 2: 输入项目名称，且不能与已有文件夹名称冲突
   let projectName = ""
   while (true) {
     const { inputProjectName } = await prompt([
       {
         type: "input",
         name: "inputProjectName",
-        message: "请输入项目名称:",
-        validate: (input) => (input ? true : "项目名称不能为空"),
+        message: "Please enter the project name:",
+        validate: (input) => (input ? true : "Project name cannot be empty."),
       },
     ])
     projectName = inputProjectName
@@ -63,16 +63,16 @@ const isProjectNameValid = (projectName, targetDir) => {
     ) {
       break
     } else {
-      console.error(`Error: 项目名称 "${projectName}" 已存在，请重新输入.`)
+      console.error(`Error: Project "${projectName}" already exists.`)
     }
   }
 
-  // Step 3: 选择目标工作区，默认是 apps 文件夹
+  //~ Step 3: 选择目标工作区，默认是 apps 文件夹
   const { targetWorkspace } = await prompt([
     {
       type: "list",
       name: "targetWorkspace",
-      message: "请选择目标工作区:",
+      message: "Please select the target workspace:",
       choices: ["apps", "examples"],
       default: "apps",
     },
@@ -82,7 +82,7 @@ const isProjectNameValid = (projectName, targetDir) => {
   const targetDir = targetWorkspace === "apps" ? appsDir : examplesDir
   const targetPath = path.join(targetDir, projectName)
 
-  // Step 4: 复制模板到目标目录并更新 package.json
+  //~ Step 4: 复制模板到目标目录并更新 package.json
   fs.copy(path.join(templatesDir, templateName), targetPath)
     .then(() => {
       console.log(
